@@ -33,7 +33,7 @@ extends MySQLiTestCase
      * @expectedException        InvalidArgumentException
      * @expectedExceptionMessage Expected string for hostname
      */
-    public function testConstructorInvalidHostname($badValue)
+    public function testConstructorThrowsExceptionIfInvalidHostname($badValue)
     {  
         $mock = new MockMySQLi([
             'hostname' => $badValue,
@@ -49,7 +49,7 @@ extends MySQLiTestCase
      * @expectedException        InvalidArgumentException
      * @expectedExceptionMessage Expected string for username
      */
-    public function testConstructorInvalidUsername($badValue)
+    public function testConstructorThrowsExceptionIfInvalidUsername($badValue)
     {  
         $mock = new MockMySQLi([
             'hostname' => 'localhost',
@@ -65,7 +65,7 @@ extends MySQLiTestCase
      * @expectedException        InvalidArgumentException
      * @expectedExceptionMessage Expected string for password
      */
-    public function testConstructorInvalidPassword($badValue)
+    public function testConstructorThrowsExceptionIfInvalidPassword($badValue)
     {  
         $mock = new MockMySQLi([
             'hostname' => 'localhost',
@@ -81,7 +81,7 @@ extends MySQLiTestCase
      * @expectedException        InvalidArgumentException
      * @expectedExceptionMessage Expected null|(positive)int for port
      */
-    public function testConstructorInvalidPort($badValue)
+    public function testConstructorThrowsExceptionIfInvalidPort($badValue)
     {  
         $mock = new MockMySQLi([
             'hostname' => 'localhost',
