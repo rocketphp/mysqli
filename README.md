@@ -1,6 +1,7 @@
 # mysqli
 
 [![Build Status](https://travis-ci.org/rocketphp/mysqli.svg?branch=master)](https://travis-ci.org/rocketphp/mysqli)
+[![Dependency Status](https://www.versioneye.com/user/projects/55e5f2f68c0f62001c0004ce/badge.svg?style=flat)](https://www.versioneye.com/user/projects/55e5f2f68c0f62001c0004ce)
 
 `RocketPHP\MySQLi` uses the MySQL Improved Extension to perform queries on a MySQL database via prepared statements.
 
