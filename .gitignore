@@ -1,4 +1,4 @@
 vendor
 example
-codesniffer-report
+log/codesniffer
 *.bat
