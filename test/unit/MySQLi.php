@@ -19,13 +19,6 @@ extends MySQLiTestCase
         $mock = new MockMySQLi($this->config); 
         $this->assertSame($mock->getProtectedProperty('_config')['hostname'], $this->config['hostname']);
     }
-    
-    public function testConnectReturnsMySQLi()
-    {   
-        $mock = new MockMySQLi($this->config);
-        $conn = $mock->connect();
-        $this->assertInstanceOf('mysqli', $conn);
-    }
 
     /**
      * @dataProvider             badConfigValues
