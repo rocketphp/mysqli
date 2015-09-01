@@ -1,0 +1,12 @@
+language: php
+
+script: phpunit
+
+before_install:
+  - composer self-update
+
+install:
+  - composer install
+
+php:
+  - 5.5
