@@ -1,5 +1,16 @@
-<?php namespace RocketPHPTest\MySQLi;
+<?php 
+/**
+ * RocketPHP (http://rocketphp.io)
+ *
+ * @package   RocketPHP
+ * @link      https://github.com/rocketphp/mysqli
+ * @license   http://opensource.org/licenses/MIT MIT
+ */
+
+namespace RocketPHPTest\MySQLi;
+
 use RocketPHP\MySQLi\MySQLi;
+
 /** 
  * Mock MySQLi
  *

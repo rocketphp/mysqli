@@ -1,4 +1,12 @@
 <?php 
+/**
+ * RocketPHP (http://rocketphp.io)
+ *
+ * @package   RocketPHP
+ * @link      https://github.com/rocketphp/mysqli
+ * @license   http://opensource.org/licenses/MIT MIT
+ */
+
 namespace RocketPHPTest\MySQLi;
 
 /**
