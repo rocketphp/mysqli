@@ -2,7 +2,6 @@
     "name": "rocketphp/mysqli",
     "description": "Prepared statements - implements MySQLi client.",
     "type": "library",
-    "version": "1.0.0",
     "authors": [
         {
             "name": "Eric Mugerwa",
