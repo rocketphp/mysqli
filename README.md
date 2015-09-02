@@ -1,6 +1,7 @@
 # mysqli
 
 [![Build Status](https://travis-ci.org/rocketphp/mysqli.svg?branch=master)](https://travis-ci.org/rocketphp/mysqli)
+[![Coverage Status](https://coveralls.io/repos/rocketphp/mysqli/badge.svg?branch=master&service=github)](https://coveralls.io/github/rocketphp/mysqli?branch=master)
 [![Dependency Status](https://www.versioneye.com/user/projects/55e5f2f68c0f62001c0004ce/badge.svg?style=flat)](https://www.versioneye.com/user/projects/55e5f2f68c0f62001c0004ce)
 
 [![Latest Stable Version](https://poser.pugx.org/rocketphp/mysqli/v/stable)](https://packagist.org/packages/rocketphp/mysqli)
