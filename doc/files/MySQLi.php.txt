@@ -85,7 +85,7 @@ implements MySQLiInterface
      */
     public function connect()
     {
-        if ($this->_config['port'] == null) {
+        if (is_null($this->_config['port'])) {
             try {
                 $conn = new \mysqli(
                     $this->_config['hostname'], 
@@ -162,7 +162,7 @@ implements MySQLiInterface
         // execute the query
         $stmt->execute(); 
         $row = $this->_bindResultArray($stmt);
-        $results = array();
+        $results = [];
         while ($stmt->fetch()) { 
             $results[] = $this->_getReferences($row);
         }    

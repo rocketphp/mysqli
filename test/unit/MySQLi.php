@@ -18,13 +18,13 @@ extends MySQLiTestCase
 
     public function testConstructor()
     {
-        $mock = new MockMySQLi($this->config); 
+        $mock = new MySQLiMock($this->config); 
         $this->assertInstanceOf('RocketPHP\\MySQLi\\MySQLi', $mock);
     }
 
     public function testConstructorSetsConfig()
     { 
-        $mock = new MockMySQLi($this->config); 
+        $mock = new MySQLiMock($this->config); 
         $this->assertSame($mock->getProtectedProperty('_config')['hostname'], $this->config['hostname']);
     }
 
@@ -35,7 +35,7 @@ extends MySQLiTestCase
      */
     public function testConstructorThrowsExceptionIfInvalidHostname($badValue)
     {  
-        $mock = new MockMySQLi([
+        $mock = new MySQLiMock([
             'hostname' => $badValue,
             'username' => 'root',
             'password' => '',
@@ -51,7 +51,7 @@ extends MySQLiTestCase
      */
     public function testConstructorThrowsExceptionIfInvalidUsername($badValue)
     {  
-        $mock = new MockMySQLi([
+        $mock = new MySQLiMock([
             'hostname' => 'localhost',
             'username' => $badValue,
             'password' => '',
@@ -67,7 +67,7 @@ extends MySQLiTestCase
      */
     public function testConstructorThrowsExceptionIfInvalidPassword($badValue)
     {  
-        $mock = new MockMySQLi([
+        $mock = new MySQLiMock([
             'hostname' => 'localhost',
             'username' => 'root',
             'password' => $badValue,
@@ -83,7 +83,7 @@ extends MySQLiTestCase
      */
     public function testConstructorThrowsExceptionIfInvalidPort($badValue)
     {  
-        $mock = new MockMySQLi([
+        $mock = new MySQLiMock([
             'hostname' => 'localhost',
             'username' => 'root',
             'password' => '',

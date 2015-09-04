@@ -12,10 +12,10 @@ namespace RocketPHPTest\MySQLi;
 use RocketPHP\MySQLi\MySQLi;
 
 /** 
- * Mock MySQLi
+ * MySQLi mock
  *
  */ 
-class MockMySQLi
+class MySQLiMock
 extends MySQLi
 {
     public function getProtectedProperty($name)
